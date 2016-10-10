@@ -6,7 +6,7 @@ A new CiviCRM extension that creates a new page in CiviCRM that displays a list 
 
 -	A CiviCRM menu link to the extension page created.
 
--	This CiviCRM is v4.7 compatible.
+-	This CiviCRM is v4.x compatible.
 
 
 All contribution will be appreciated.
