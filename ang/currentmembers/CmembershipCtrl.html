@@ -1,0 +1,73 @@
+<div class="crm-container">
+  
+  <form name="myForm" crm-ui-id-scope>
+    <div crm-ui-accordion="{title: ts('Simple filter by date: start & end')}">
+      <div class="crm-block">
+        <div class="crm-group">
+          <div crm-ui-field="{name: 'myForm.start_date', title: ts('Name')}">
+            <input
+              crm-ui-id="myForm.from_date"
+              name="start_from"
+              ng-model="se.from"
+              mask="9999-13-32"
+              clean="true" 
+              validate="true"
+              class="crm-form-text"
+              placeholder="{{ts('Start date from')}}"
+              />
+            <input
+              crm-ui-id="myForm.to_date"
+              name="start_to"
+              ng-model="se.to"
+              class="crm-form-text"
+              mask="9999-13-32"
+              clean="true" 
+              validate="true"
+              placeholder="{{ts('End date to')}}"
+              />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button ng-click="search()">{{ts('Search')}}</button>
+        <button reload >{{ts('Reset')}}</button>
+      </div>
+    </div>
+  </form>
+
+  <div id="t1" class="card" style="padding:5px">
+      <div class="card-header bgm-brown">
+            <h2>{{ts('Memberships List')}}</h2>
+      </div>
+      <div class="card-body">
+          <div class="table-responsive">
+              <table ng-table="tableFilterC" class="table table-bordered table-striped table-vmiddle" >
+                <tr ng-repeat="w in c_membership">
+                        <td data-title="'Display name'" >
+                            {{ w.display_name }}
+                        </td>
+                        <td data-title="'Start date'">
+                            {{ w.start_date }}
+                        </td>
+                        <td data-title="'Join date'">
+                            {{ w.join_date }}
+                        </td>
+                        <td data-title="'End date'">
+                            {{ w.end_date }}
+                        </td>
+                        <td data-title="'Source'" >
+                            {{ w.source }}
+                        </td>
+                         <td data-title="'Status'">
+                            {{ w.status }}
+                        </td>
+                    </tr>
+   
+              </table>
+          </div>
+      </div>
+  </div>
+  <!-- Where membership will when searching ..-->
+  <div id="b3"></div>
+</div>
