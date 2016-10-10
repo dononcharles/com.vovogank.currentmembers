@@ -9,9 +9,9 @@
     <email>dononcharles@gmail.com</email>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">https://github.com/dononcharles/CiviCrm-CurrentMembership-Extension</url>
-    <url desc="Documentation">https://github.com/dononcharles/CiviCrm-CurrentMembership-Extension</url>
-    <url desc="Support">https://github.com/dononcharles/CiviCrm-CurrentMembership-Extension</url>
+    <url desc="Main Extension Page">https://github.com/dononcharles/com.vovogank.currentmembers</url>
+    <url desc="Documentation">https://github.com/dononcharles/com.vovogank.currentmembers</url>
+    <url desc="Support">https://github.com/dononcharles/com.vovogank.currentmembers</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2016-10-08</releaseDate>
